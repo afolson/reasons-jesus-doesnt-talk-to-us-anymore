@@ -1,6 +1,4 @@
 <?php
-include ('reasons.php');
-
 class Reason {
 	public function __construct() {
 	}
