@@ -4,8 +4,11 @@ define( 'ABSPATH', dirname( __FILE__ ) );
 include_once( ABSPATH . '/includes/reasons.php' );
 require_once( ABSPATH . '/includes/Reason.php' );
 
+// The reason list globalized from reasons.php
+global $reasonList;
 
-$reason = new Reason();
+// Instantiate the Reason class and populate it
+$reason = new Reason( $reasonList );
 
 ?>
 <!DOCTYPE html>

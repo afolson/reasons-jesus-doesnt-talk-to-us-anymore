@@ -1,6 +1,9 @@
 <?php
 class Reason {
-	public function __construct() {
+	private $reasons = array();
+
+	public function __construct( $reasons ) {
+		$this->reasons = $reasons;
 	}
 
 	public function addReason() {
@@ -8,9 +11,8 @@ class Reason {
 	}
 
 	public function getReason() {
-		global $reasonList;
-		$value = array_rand($reasonList);
-		return $reasonList[$value];
+		$value = array_rand( $this->reasons );
+		return $this->reasons[$value];
 	}
 
 	public function updateReason() {

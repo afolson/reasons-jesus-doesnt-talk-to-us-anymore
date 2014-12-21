@@ -1,5 +1,9 @@
 <?php
 
+// Instantiate our reason list array
+global $reasonList;
+$reasonList = array();
+
 // List of reasons why Jesus doesn't talk to us anymore.
 $reasonList[]='Justin Bieber.';
 $reasonList[]='Kim Kardashian.';
