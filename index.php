@@ -1,6 +1,8 @@
 <?php
 
-include ('includes/Reason.php');
+define( 'ABSPATH', dirname( __FILE__ ) );
+include_once( ABSPATH . '/includes/reasons.php' );
+require_once( ABSPATH . '/includes/Reason.php' );
 
 $reason = new Reason();
 
