@@ -36,3 +36,4 @@ $reasonList[]='Internet Explorer.';
 $reasonList[]='The Large Hadron Collider.';
 $reasonList[]='YouTube.';
 $reasonList[]='Taco Bell.';
+$reasonList[]='<a href="http://capitalp.org">The Capital P in WordPress</a>';
