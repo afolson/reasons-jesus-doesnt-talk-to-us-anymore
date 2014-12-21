@@ -4,6 +4,7 @@ define( 'ABSPATH', dirname( __FILE__ ) );
 include_once( ABSPATH . '/includes/reasons.php' );
 require_once( ABSPATH . '/includes/Reason.php' );
 
+
 $reason = new Reason();
 
 ?>
@@ -18,13 +19,13 @@ $reason = new Reason();
 		<link rel="icon" href="../../favicon.ico">
 		<title>Reasons Jesus Doesn't Talk to Us Anymore</title>
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<!-- Custom styles for this template -->
 		<link href="cover.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
 	<body>
@@ -59,7 +60,7 @@ $reason = new Reason();
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="../../dist/js/bootstrap.min.js"></script>
 		<script src="../../assets/js/docs.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
