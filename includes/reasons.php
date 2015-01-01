@@ -40,3 +40,5 @@ $reasonList[]='<a href="http://capitalp.org">The Capital P in WordPress.</a>';
 $reasonList[]='People Who Can\'t Wait to Tell You About Their New Diet.';
 $reasonList[]='Whaling.';
 $reasonList[]='Global Warming.';
+$reasonList[]='The Green Bay Packers.';
+$reasonList[]='Square Business Cards.';
