@@ -15,6 +15,11 @@ class Reason {
 		return $this->reasons[$value];
 	}
 
+	public function getRandomReasonID() {
+		$value = array_rand( $this->reasons );
+		return $value;
+	}
+
 	public function getReasonByID($id) {
 		return $this->reasons[$id];
 	}
