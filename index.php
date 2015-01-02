@@ -11,6 +11,14 @@ global $reasonList;
 // Instantiate the Reason class and populate it
 $reason = new Reason( $reasonList );
 
+// Always force ID URLs
+if ( ! isset( $_GET['id'] ) || empty( $_GET['id'] ) || ! ctype_digit( $_GET['id'] ) ) {
+	$reason_url = ABSURL . '?id=' . $reason->getRandomReasonID();
+
+	header( 'Location: ' . $reason_url, true, 302 );
+	die();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
