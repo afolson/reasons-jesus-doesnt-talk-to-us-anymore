@@ -58,7 +58,7 @@ $reason = new Reason( $reasonList );
 								}
 							?>
 						</h1>
-						<p class="lead"><a href="javascript:location.reload(true)" class="btn btn-default">Why else?</a></p>
+						<p class="lead"><a href="#" class="btn btn-default get-random-reason">Why else?</a></p>
 					</div>
 					<div class="mastfoot">
 <!-- 						<div class="inner">

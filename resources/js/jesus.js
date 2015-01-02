@@ -1,9 +1,15 @@
 jQuery(document).ready(function ($) {
-	$("body").keydown(function (e) {
-		var rootUrl = document.location.origin + document.location.pathname;
+	function returnHome() {
+		window.location = document.location.origin + document.location.pathname;
+	}
 
-		if ( 32 == e.keyCode || ( 37 <= e.keyCode && 40 >= e.keyCode ) ) {
-			window.location = rootUrl;
+	$("body").keydown(function (e) {
+		if (32 == e.keyCode || ( 37 <= e.keyCode && 40 >= e.keyCode )) {
+			returnHome();
 		}
+	});
+
+	$(".get-random-reason").click(function (e) {
+		returnHome();
 	});
 });
