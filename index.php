@@ -19,7 +19,7 @@ $reason = new Reason( $reasonList );
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link rel="icon" href="../../favicon.ico">
+		<!-- <link rel="icon" href="../../favicon.ico"> -->
 		<title>Reasons Jesus Doesn't Talk to Us Anymore</title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -49,7 +49,15 @@ $reason = new Reason( $reasonList );
 					</div>
 					<div class="inner cover">
 						<p class="lead">Jesus doesn't talk to us anymore because of...</p>
-						<h1 class="cover-heading"><?php echo $reason->getReason(); ?></h1>
+						<h1 class="cover-heading">
+							<?php
+								if (isset($_GET['id'])) {
+									echo $reason->getReasonByID($_GET['id']);
+								} else {
+									echo $reason->getReason();
+								}
+							?>
+						</h1>
 						<p class="lead"><a href="javascript:location.reload(true)" class="btn btn-default">Why else?</a></p>
 					</div>
 					<div class="mastfoot">
@@ -64,10 +72,7 @@ $reason = new Reason( $reasonList );
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="../../dist/js/bootstrap.min.js"></script>
-		<script src="../../assets/js/docs.min.js"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<script src="resources/js/jesus.js"></script>
 	</body>
 </html>

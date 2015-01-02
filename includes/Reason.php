@@ -15,6 +15,10 @@ class Reason {
 		return $this->reasons[$value];
 	}
 
+	public function getReasonByID($id) {
+		return $this->reasons[$id];
+	}
+
 	public function updateReason() {
 
 	}
