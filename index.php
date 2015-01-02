@@ -1,6 +1,7 @@
 <?php
 
 define( 'ABSPATH', dirname( __FILE__ ) );
+define( 'ABSURL', $_SERVER['SERVER_NAME'] . ( $_SERVER['SERVER_PORT'] != 80 ? ':' . $_SERVER['SERVER_PORT'] : '' ) . '/' );
 include_once( ABSPATH . '/includes/reasons.php' );
 require_once( ABSPATH . '/includes/Reason.php' );
 
