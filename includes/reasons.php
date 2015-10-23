@@ -48,3 +48,6 @@ $reasonList[]='Square Business Cards.';
 $reasonList[]='Rust\'s Documentation.';
 $reasonList[]='Jorts.';
 $reasonList[]='MongoDB.';
+$reasonList[]='Case-insensItive Filesystems.';
+$reasonList[]='Oracle.';
+$reasonList[]='Yelp reviewers.';
